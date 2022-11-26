@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../cap site/style.css">
+    <title>M.D.R.C site</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['metals', 'their percentages'],
+          ['Iron',     11],
+          ['Copper',      4],
+          ['Aluminum',  2],
+          ['Gold', 0.5],
+          ['silver',    1]
+        ]);
+
+        var options = {
+          title: 'Metals that has been detected'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+</head>
+<body>
+    <div id="piechart" class="chart" style="width: 900px; height: 500px;"></div>
+
+    <div class="text">
+        <h1>The M.D.R.C location </h1>
+    </div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.22841256033917!2d29.97343115536949!3d31.23029734493443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4d4b86b1acb%3A0x9bebe72d441d8b2c!2s6%20Othman%20Ibn%20Effan%2C%20Al%20Mahrousah%2C%20El%20Raml%202%2C%20Alexandria%20Governorate%205447241!5e0!3m2!1sen!2seg!4v1669474403002!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</body>
+</html>>
